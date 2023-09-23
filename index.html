@@ -4,20 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 2</title>
+    <link rel="stylesheet/less" type="text/css" href="index.less" />
   </head>
   <body>
-    <h1>Guess The Bill!</h1>
-    <h3>Status: <span id="status"></span></h3>
-    <label for="predicted">Enter Your Guess</label>
-    <input
-      type="number"
-      name="predicted"
-      id="predicted"
-      min="500"
-      max="5000"
-      step="1"
-    />
-    <p id="actual" hidden></p>
+    <div class="app">
+      <h1>Guess The Bill!</h1>
+      <h3>Status: <span id="status"></span></h3>
+      <label for="predicted">Enter Your Guess</label>
+      <input
+        type="number"
+        name="predicted"
+        id="predicted"
+        min="500"
+        max="5000"
+        step="1"
+        placeholder="Range: 500-5000"
+        style="width: 7rem"
+      />
+      <p id="actual" hidden></p>
+    </div>
     <script src="index.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/less.js/4.2.0/less.js"
+      integrity="sha512-yVPBwol+aakmzsctiFaibmCZTBkK36GUXJfSvv8sBHdH6AxFONKBJ0I7nYLdZk/T5MUjuSsOBTImADORbDYbSA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>
